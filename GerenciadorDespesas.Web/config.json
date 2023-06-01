@@ -1,0 +1,6 @@
+{
+  "ConnectionStrings": {
+    "SqlServerConnection": "",
+    "Conexao": "server=localhost;uid=root;pwd=toor;database=GerenciadorDespesas" //"server=localhost;uid=root;pwd=toor;database=GerenciadorDespesas" //Server=(localdb)\\mssqllocaldb;Database=GerenciadorDespesas;
+  }
+}

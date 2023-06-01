@@ -6,7 +6,7 @@ namespace GerenciadorDespesas.Web.Models
     {
         public int Id { get; set; }
         public int MesId { get; set; }
-        public Meses Meses { get; set; }
+        public virtual Meses Meses { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório.")]
         [Range(0, double.MaxValue, ErrorMessage = "Valor inválido")]

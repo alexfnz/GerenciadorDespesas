@@ -11,8 +11,8 @@ namespace GerenciadorDespesas.Web.Models
 
         public string Nome { get; set; }
 
-        public ICollection<Despesas> Despesas { get; set; }
+        public virtual ICollection<Despesas> Despesas { get; set; }
 
-        public Salarios Salarios { get; set; }
+        public virtual Salarios Salarios { get; set; }
     }
 }

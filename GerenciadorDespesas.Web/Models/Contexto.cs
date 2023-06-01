@@ -10,16 +10,19 @@ namespace GerenciadorDespesas.Web.Models
         public DbSet<Despesas> Despesas { get; set; }
         public DbSet<TipoDespesas> TipoDespesas { get; set; }
 
-        public Contexto(DbContextOptions<Contexto> opcoes) : base(opcoes)
+        public Contexto(DbContextOptions opcoes) : base(opcoes)
         {
 
         }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new TipoDespesasMap());
             modelBuilder.ApplyConfiguration(new DespesasMap());
             modelBuilder.ApplyConfiguration(new SalariosMap());
             modelBuilder.ApplyConfiguration(new MesesMap());
+
+            base.OnModelCreating(modelBuilder);
         }
     }
 }

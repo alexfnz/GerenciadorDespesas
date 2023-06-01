@@ -11,6 +11,6 @@ namespace GerenciadorDespesas.Web.Models
         [StringLength(20, ErrorMessage = "Ultrapassou limite de 20 caracteres.")]
         public string Nome { get; set; }
 
-        public ICollection<Despesas> Despesas { get; set; }
+        public virtual ICollection<Despesas> Despesas { get; set; }
     }
 }
